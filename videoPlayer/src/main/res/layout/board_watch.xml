@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CMPW IN WATCHING......"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="center">
+        </TextView>
+        <TextView
+            android:id="@+id/board_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+        </TextView>
+        <TextView
+            android:id="@+id/board_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:id="@+id/alarm_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="报警信息"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textSize="14sp" />
+        <ImageView
+            android:id="@+id/alarm_img"
+            android:layout_width="21dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:src="@drawable/alarm_sign">
+
+        </ImageView>
+        <Button
+            android:id="@+id/tv_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="实时视频"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/mdata_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="70dp"
+            android:text="本月数据"
+            android:layout_gravity="center"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/temp_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+    </TextView>
+    <TextView
+        android:id="@+id/humi_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/imageSmile"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="314dp"
+        app:srcCompat="@drawable/ok" />
+
+    <TextView
+        android:id="@+id/noGoodText"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:gravity="center"
+        android:text="当前无异常" />
+
+</LinearLayout>
